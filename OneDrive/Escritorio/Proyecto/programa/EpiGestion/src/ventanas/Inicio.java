@@ -30,12 +30,16 @@ public class Inicio extends javax.swing.JFrame {
         imgEntregasEpi = new javax.swing.JLabel();
         imgEpi = new javax.swing.JLabel();
         imgConsulta = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         vi = new javax.swing.JPanel();
         imgCerrar = new javax.swing.JLabel();
         imgFabrica = new javax.swing.JLabel();
         imgStock = new javax.swing.JLabel();
         imgEmp = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -79,7 +83,7 @@ public class Inicio extends javax.swing.JFrame {
                 imgEntregasEpiMouseExited(evt);
             }
         });
-        getContentPane().add(imgEntregasEpi, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 70, 60));
+        getContentPane().add(imgEntregasEpi, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 70, 60));
 
         imgEpi.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         imgEpi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/ropa60px.png"))); // NOI18N
@@ -96,7 +100,7 @@ public class Inicio extends javax.swing.JFrame {
                 imgEpiMouseExited(evt);
             }
         });
-        getContentPane().add(imgEpi, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 70, -1));
+        getContentPane().add(imgEpi, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 70, -1));
 
         imgConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/consulta60px.png"))); // NOI18N
         imgConsulta.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -112,7 +116,16 @@ public class Inicio extends javax.swing.JFrame {
                 imgConsultaMouseExited(evt);
             }
         });
-        getContentPane().add(imgConsulta, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 70, 60));
+        getContentPane().add(imgConsulta, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, 70, 60));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setText("MENU");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
         vi.setBackground(new java.awt.Color(11, 27, 54));
         vi.setAutoscrolls(true);
@@ -146,14 +159,14 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, viLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(imgCerrar)
-                .addGap(88, 88, 88))
+                .addGap(59, 59, 59))
         );
         viLayout.setVerticalGroup(
             viLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(viLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addGap(17, 17, 17)
                 .addComponent(imgCerrar)
-                .addGap(292, 292, 292)
+                .addGap(291, 291, 291)
                 .addGroup(viLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(imgStock)
                     .addComponent(imgFabrica)
@@ -163,14 +176,17 @@ public class Inicio extends javax.swing.JFrame {
 
         getContentPane().add(vi, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 1020, 750));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setText("MENU");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+        jLabel6.setText("Consulta entregas");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, -1, -1));
+
+        jLabel7.setText("Empleados");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
+
+        jLabel8.setText("Realizar entregas");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+
+        jLabel9.setText("Epis");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -300,6 +316,10 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel imgFabrica;
     private javax.swing.JLabel imgStock;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JPanel vi;
     // End of variables declaration//GEN-END:variables
