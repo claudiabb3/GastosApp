@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Registro"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <!-- Campo para el nombre del usuario -->
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp"
+        android:layout_below="@id/registro"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para el correo electrónico -->
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/txtnombre"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para la contraseña -->
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:layout_below="@id/txtemail"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para registrar -->
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtpassword"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:backgroundTint="#FFD180"
+        android:textColor="@color/black"
+        android:text="@string/registrarme" />
+    <Button
+        android:id="@+id/btncancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnregistrar"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF9E80"
+        android:gravity="center"
+        android:text="@string/cancelar" />
+</RelativeLayout>

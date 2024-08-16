@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "367904560580",
+    "firebase_url": "https://gasto-faf97-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "gasto-faf97",
+    "storage_bucket": "gasto-faf97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367904560580:android:aee5ee3e7af25590ee8091",
+        "android_client_info": {
+          "package_name": "com.clau.gastosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367904560580-b83to51e592027oh849aa7mhur73ruen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoYWK8e4ou6KWhb2qrzs17BxJhs8DVNVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367904560580-b83to51e592027oh849aa7mhur73ruen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

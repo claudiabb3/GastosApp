@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:id="@+id/nuevomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nuevo_mes"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Campo para la descripción del mes -->
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/nuevomes"
+        android:background="@drawable/borde"
+        android:textSize="16sp"
+        android:hint="Descripción"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:inputType="text" />
+
+
+
+    <!-- Spinner para seleccionar el mes -->
+    <Spinner
+        android:id="@+id/spinnerMes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edtDescripcion"
+        android:background="@drawable/borde"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Botones de Aceptar y Cancelar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/spinnerMes"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Botón Aceptar -->
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:backgroundTint="#B388FF"
+            android:textColor="@color/black"
+            android:text="@string/cancelar" />
+
+        <!-- Espacio entre los botones -->
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Botón Cancelar -->
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:backgroundTint="#FF8A80"
+            android:textColor="@color/black"
+            android:text="@string/aceptar" />
+    </LinearLayout>
+
+</RelativeLayout>

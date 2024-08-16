@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">GastosApp</string>
+    <string name="Mes_en_curso">Mes en curso</string>
+    <string name="Mes_nuevo">Crear nuevo mes</string>
+    <string name="Meses_anterioes">Meses anteriores</string>
+    <string name="Mese_en_curso">Mes en curso</string>
+    <string name="Meses_finalizados">Meses finalizados</string>
+    <string name="Nuevo_mes">Crear nuevo mes</string>
+    <string name="Cerrar_sesion">Cerrar sesión</string>
+    <string name="Registro">Registro de nuevo usuario</string>
+    <string name="Añadir_nuevo_gasto">Añadir nuevo gasto</string>
+    <string name="guardar">Guardar gasto</string>
+    <string name="Configurar">Configurar cuenta</string>
+    <string name="nuevo_nombre">Nuevo nombre</string>
+    <string name="nuevo_correo">Nuevo correo electronico</string>
+    <string name="nueva_contraseña">Nueva contraseña</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eliminar">Eliminar cuenta</string>
+    <string name="tiquet">Tiquet de compra</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="importe">Importe</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="fecha">Fecha</string>
+    <string name="mes">Mes</string>
+    <string name="estado">Estado</string>
+    <string name="total_gastos">Total gastos</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="recuperar_contraseña">Recuperar contraseña</string>
+
+
+    <string-array name="meses_array">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+
+</resources>

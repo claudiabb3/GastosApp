@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/gasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Añadir_nuevo_gasto"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtDescripcionGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del Gasto"
+        android:layout_below="@id/gasto"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borde"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/edtImporteGasto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtDescripcionGasto"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:hint="Importe"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:background="@drawable/borde"
+        android:inputType="numberDecimal" />
+
+
+    <TextView
+        android:id="@+id/tvFechaGasto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtDescripcionGasto"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borde"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="Fecha"
+        android:textSize="20sp"
+        android:padding="5dp"
+         />
+
+    <ImageButton
+        android:id="@+id/btnSeleccionarFecha"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/edtDescripcionGasto"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/calendario"
+        android:background="#FFFF8D"
+        android:text="Seleccionar Fecha" />
+
+
+    <ImageButton
+        android:id="@+id/btnSeleccionarFoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/btnSeleccionarFecha"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/galeria"
+        android:background="@color/fondo"
+        android:scaleType="centerInside"
+        android:text="Seleccionar Fecha"/>
+
+
+    <ImageView
+        android:id="@+id/imgFotoGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_below="@id/btnSeleccionarFoto"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Foto del Gasto"
+        android:scaleType="centerInside"
+        android:src="@drawable/ggastos" />
+
+
+    <Button
+        android:id="@+id/btnGuardarGasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFotoGasto"
+        android:layout_marginTop="30dp"
+        android:text="@string/guardar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
